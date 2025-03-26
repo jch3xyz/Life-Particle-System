@@ -51,6 +51,8 @@ class Particle {
   void display() {
     fill(c);
     noStroke();
-    circle(x, y, 5);
+    //stroke(c);
+    //noFill();
+    circle(x, y, 6);
   }
 }

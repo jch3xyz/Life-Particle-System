@@ -8,8 +8,8 @@ float redRed, greenGreen, blueBlue, yellowYellow;
 float redGreen, redBlue, redYellow, greenBlue, greenYellow, blueYellow;
 float greenRed, blueRed, yellowRed, blueGreen, yellowGreen, yellowBlue;
 
-float r = 0.50;
-int n = 700;
+float r = 0.60;
+int n = 1000;
 
 ArrayList<Particle> particles = new ArrayList<Particle>();
 
@@ -38,7 +38,7 @@ boolean equalOpposite = false;
 
 void setup() {
   size(1920, 1080, P2D);
-  cellSize = height / 9.0;
+  cellSize = height /8.0;
   
   // Create particle groups.
   redParticles = createParticles(n, RED);
