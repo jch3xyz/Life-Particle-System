@@ -36,9 +36,15 @@ Rule ruleGreenBlue, ruleBlueGreen, ruleGreenYellow, ruleYellowGreen, ruleBlueYel
 // Global toggle: if true, cross interactions are linked (equal & opposite).
 boolean equalOpposite = false;
 
+//images for flyers
+PImage squareImg, verticalImg;
+
 void setup() {
-  size(1920, 1080, P2D);
-  cellSize = width /6.0;
+  size(1080, 1080, P2D);
+  cellSize = width /4.0;
+  
+  //load images
+  squareImg = loadImage("resources/Feedback Loops (square transparent).png");
   
   // Create particle groups.
   redParticles = createParticles(n, RED);
@@ -283,6 +289,11 @@ void draw() {
     p.update(damping);
     p.display();
   }
+  
+  //draw image
+  image(squareImg, 0, 0, 1080, 1080);
+  
+  //saveFrame("square video/square-######.png");
 }
 
 Particle[] createParticles(int n, color col) {
