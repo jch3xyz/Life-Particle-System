@@ -40,11 +40,12 @@ boolean equalOpposite = false;
 PImage squareImg, verticalImg;
 
 void setup() {
-  size(1080, 1080, P2D);
+  size(1080, 1920, P2D);
   cellSize = width /4.0;
   
   //load images
   squareImg = loadImage("resources/Feedback Loops (square transparent).png");
+  verticalImg = loadImage("resources/Feedback Loops (veritcal transparent).png");
   
   // Create particle groups.
   redParticles = createParticles(n, RED);
@@ -291,9 +292,10 @@ void draw() {
   }
   
   //draw image
-  image(squareImg, 0, 0, 1080, 1080);
+  //image(squareImg, 0, 0, 1080, 1080);
+  image(verticalImg, 0, 0);
   
-  //saveFrame("square video/square-######.png");
+  //saveFrame("vertical video/vertical-######.png");
 }
 
 Particle[] createParticles(int n, color col) {
