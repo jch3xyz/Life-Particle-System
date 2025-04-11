@@ -40,8 +40,8 @@ boolean equalOpposite = false;
 PImage squareImg, verticalImg;
 
 void setup() {
-  size(1080, 1920, P2D);
-  cellSize = width /4.0;
+  size(1920, 1080, P2D);
+  cellSize = width /6.0;
   
   //load images
   squareImg = loadImage("resources/Feedback Loops (square transparent).png");
@@ -293,7 +293,7 @@ void draw() {
   
   //draw image
   //image(squareImg, 0, 0, 1080, 1080);
-  image(verticalImg, 0, 0);
+  //image(verticalImg, 0, 0);
   
   //saveFrame("vertical video/vertical-######.png");
 }
