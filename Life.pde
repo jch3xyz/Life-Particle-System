@@ -9,7 +9,7 @@ float redGreen, redBlue, redYellow, greenBlue, greenYellow, blueYellow;
 float greenRed, blueRed, yellowRed, blueGreen, yellowGreen, yellowBlue;
 
 float r = 0.40;
-int n = 700;
+int n = 800;
 
 ArrayList<Particle> particles = new ArrayList<Particle>();
 
@@ -40,8 +40,8 @@ boolean equalOpposite = false;
 PImage squareImg, verticalImg;
 
 void setup() {
-  size(1920, 1080, P2D);
-  cellSize = width /6.0;
+  size(1728, 1117, P2D);
+  cellSize = width /8.0;
   
   //load images
   squareImg = loadImage("resources/Feedback Loops (square transparent).png");
@@ -178,6 +178,13 @@ void setup() {
 
 void draw() {
   background(0);
+  
+  //draw text
+  fill(255);
+  rectMode(CENTER);
+  textAlign(CENTER, CENTER);
+  textSize(96);
+ // text("EVERYTHING WORKS THIS WAY", width/2, height/2, width-100, height/3);
   
   // Update grid cell for each particle.
   for (Particle p : particles) {
