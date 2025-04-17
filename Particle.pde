@@ -53,6 +53,6 @@ class Particle {
     noStroke();
     //stroke(c);
     //noFill();
-    circle(x, y, 7);
+    circle(x, y, 8);
   }
 }

@@ -40,7 +40,7 @@ boolean equalOpposite = false;
 PImage squareImg, verticalImg;
 
 void setup() {
-  size(1728, 1117, P2D);
+  size(1920, 1080, P2D);
   cellSize = width /8.0;
   
   //load images
