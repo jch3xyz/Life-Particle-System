@@ -1,1 +1,1 @@
-Just run the Life.pde sketch
+Download the repository and run the Life.pde sketch
